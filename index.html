@@ -1,1 +1,85 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0e13">
+  <meta name="description" content="X Auto Shop by Xavier. Explore automotive repairs, wheels, rims, tires, maintenance, and more.">
+  <title>X Auto Shop | Built to Perform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0e13;--card:#15191f;--edge:#30353d;--muted:#abb2bd;--white:#faf9f6;--orange:#fc6634;--orange2:#ff9459;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font:16px/1.6 'DM Sans',Arial,sans-serif}a{color:inherit;text-decoration:none}img{width:100%;display:block}button,input,textarea{font:inherit}button{cursor:pointer}h1,h2,h3,p{margin-top:0}h1,h2,h3,.logo,.eyebrow,.btn,.number{font-family:'Barlow Condensed',Impact,sans-serif}h1,h2,h3{text-transform:uppercase;letter-spacing:.01em;line-height:.97}h2{font-size:clamp(2.8rem,7vw,5rem)}h3{font-size:1.65rem}.wrap{width:min(calc(100% - 40px),var(--max));margin-inline:auto}.eyebrow{font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);font-size:.93rem}.muted{color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;text-transform:uppercase;font-weight:800;letter-spacing:.08em;padding:15px 23px;background:var(--orange);color:#0b0e13;border:1px solid var(--orange);transition:transform .2s,background .2s}.btn:hover{background:var(--orange2);transform:translateY(-2px)}.btn.alt{color:#fff;background:transparent;border-color:#7f838a}.btn.alt:hover{border-color:var(--orange);background:#ffffff10}.arrow{font-size:1.4em;line-height:0}.section{padding:95px 0}.section-top{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:36px}.section-top p{max-width:415px;margin-bottom:8px}.outline{border-top:1px solid var(--edge)}
+    header{position:relative;z-index:5;background:#0b0e13eb;border-bottom:1px solid #ffffff1a}.nav{height:86px;display:flex;align-items:center;justify-content:space-between;gap:22px}.logo{display:inline-flex;align-items:center;gap:12px;font-size:1.7rem;font-weight:900;letter-spacing:.025em;line-height:.8;white-space:nowrap}.logo-symbol{background:var(--orange);color:var(--bg);display:grid;place-items:center;width:47px;height:47px;font-size:2rem;font-weight:900;transform:skew(-8deg)}.logo small{display:block;color:var(--orange);letter-spacing:.23em;font-size:.72rem;padding-top:8px}.nav-links{display:flex;align-items:center;gap:30px;font-size:.83rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700}.nav-links a:not(.btn):hover{color:var(--orange)}.nav-links .btn{padding:11px 17px}.menu{display:none;background:none;border:1px solid #5d6167;color:white;font-size:1.7rem;min-width:43px;height:43px}
+    .hero{position:relative;min-height:660px;display:flex;align-items:center;overflow:hidden;isolation:isolate}.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#090b0feb 3%,#090b0fc9 46%,#090b0f4a 100%),linear-gradient(0deg,#090b0f 0%,transparent 55%),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1900&q=85') center center/cover;z-index:-1}.hero::after{content:"X";position:absolute;right:3%;bottom:-155px;color:#ffffff08;font:900 580px/.8 'Barlow Condensed',sans-serif;z-index:-1;pointer-events:none}.hero-inner{padding:85px 0 95px}.hero h1{font-size:clamp(5rem,12vw,10rem);max-width:880px;margin:16px 0 24px}.hero h1 span{color:var(--orange)}.hero p{max-width:540px;font-size:1.12rem;color:#e1e1e4}.hero-buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}.hero-kicker{display:flex;align-items:center;gap:12px}.hero-kicker:before{content:"";width:34px;height:2px;background:var(--orange)}
+    .strip{background:var(--orange);color:#131313}.strip-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:17px 0;font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.11em;font-size:1.05rem}.strip span{display:inline-flex;gap:10px;align-items:center}.strip b{font-size:1.2rem}
+    .services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.service{position:relative;min-height:245px;background:linear-gradient(150deg,#1b2028,#101318);border:1px solid var(--edge);padding:29px;transition:border-color .2s,transform .2s}.service:hover{transform:translateY(-4px);border-color:var(--orange)}.service-icon{font-size:2rem;line-height:1;display:block;margin-bottom:28px}.service h3{margin-bottom:11px}.service p{font-size:.93rem;color:var(--muted);max-width:280px}.service .number{position:absolute;right:25px;top:19px;color:#ffffff28;font-size:1.25rem;font-weight:700}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-img{position:relative;min-height:520px;background:linear-gradient(180deg,transparent 55%,#10131880),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85') center/cover}.about-img::after{content:'BUILT FOR THE ROAD';position:absolute;bottom:25px;left:25px;background:var(--orange);color:#0b0e13;padding:11px 16px;font:800 1.1rem 'Barlow Condensed',sans-serif;letter-spacing:.12em}.about h2{margin:20px 0}.about p{color:var(--muted);max-width:530px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px;font-weight:600;font-size:.91rem}.checks span::before{content:'✓';color:var(--orange);margin-right:9px;font-weight:800}
+    .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.photo{position:relative;aspect-ratio:1.12;background:#1b2028;overflow:hidden}.photo img{height:100%;object-fit:cover;transition:transform .45s}.photo:hover img{transform:scale(1.055)}.photo figcaption{position:absolute;inset:auto 0 0;padding:40px 20px 15px;background:linear-gradient(transparent,#000c);font:800 1.35rem 'Barlow Condensed',sans-serif;text-transform:uppercase}.photo figcaption small{display:block;font:500 .68rem 'DM Sans',sans-serif;color:#c8c9ce;letter-spacing:.08em;text-transform:uppercase}.sample-note{font-size:.84rem;color:#8f98a5;margin:18px 0 0}
+    .cta{padding:75px 0;background:linear-gradient(115deg,#fd6833,#e94a24);color:#111}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{max-width:690px;margin:12px 0 0;font-size:clamp(3.5rem,8vw,6.7rem)}.cta .eyebrow{color:#151515}.cta .btn{background:#111;color:#fff;border-color:#111;white-space:nowrap}.cta .btn:hover{background:#292929}
+    .contact{display:grid;grid-template-columns:1.2fr .8fr;gap:44px}.contact h2{margin:13px 0 25px}.contact p{color:var(--muted);max-width:610px}.info{display:grid;gap:16px;margin-top:28px}.info-item{padding:17px 20px;background:var(--card);border-left:3px solid var(--orange)}.info-item b{display:block;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;margin-bottom:3px;color:#fff}.info-item span{color:#b9bec8}.contact-art{min-height:350px;background:linear-gradient(180deg,#0b0e1300,#0b0e13aa),url('https://images.unsplash.com/photo-1738103814463-688f5acd36f0?auto=format&fit=crop&w=1200&q=85') center/cover;border:1px solid var(--edge)}footer{border-top:1px solid var(--edge);padding:26px 0;color:#a8afb9;font-size:.85rem}.footer-inner{display:flex;gap:20px;align-items:center;justify-content:space-between}.footer-inner span:last-child{color:var(--orange)}
+    @media(max-width:900px){.services{grid-template-columns:repeat(2,1fr)}.about{gap:32px}.about-img{min-height:430px}.section{padding:76px 0}.nav-links{gap:16px}.nav-links .btn{display:none}}@media(max-width:640px){.wrap{width:min(calc(100% - 32px),var(--max))}.nav{height:70px}.logo{font-size:1.45rem}.logo-symbol{height:40px;width:40px;font-size:1.7rem}.menu{display:block}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:#0c0f14;border-bottom:1px solid #30353d;padding:20px;flex-direction:column;align-items:stretch;gap:20px}.nav-links.open{display:flex}.nav-links .btn{display:inline-flex}.hero{min-height:600px}.hero::before{background:linear-gradient(90deg,#090b0fef,#090b0f86),linear-gradient(0deg,#090b0f,transparent),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=950&q=80') center/cover}.hero-inner{padding:80px 0}.hero h1{font-size:clamp(4.75rem,17vw,7rem)}.hero-buttons .btn{width:100%}.strip-inner{font-size:.85rem;gap:10px;justify-content:center}.strip-inner span:nth-child(3){display:none}.section-top{display:block}.services,.gallery,.about,.contact{grid-template-columns:1fr}.service{min-height:210px}.about-img{min-height:340px}.checks{grid-template-columns:1fr 1fr}.photo{aspect-ratio:1.23}.cta-inner{display:block}.cta .btn{margin-top:30px}.contact-art{min-height:260px}.footer-inner{align-items:start;flex-direction:column;gap:5px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="X Auto Shop home"><span class="logo-symbol">X</span><span>X AUTO <small>SHOP</small></span></a>
+      <button class="menu" id="menu" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a><a class="btn" href="#contact">Get a Quote <span class="arrow">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-inner">
+        <span class="eyebrow hero-kicker">Automotive Care • Custom Wheels • More</span>
+        <h1>YOUR RIDE.<br><span>OUR PASSION.</span></h1>
+        <p>From everyday maintenance to custom rims and automotive repairs, X Auto Shop brings your vision for your vehicle to life.</p>
+        <div class="hero-buttons"><a class="btn" href="#services">Explore Services <span class="arrow">↗</span></a><a class="btn alt" href="#gallery">See the Gallery</a></div>
+      </div>
+    </section>
+    <div class="strip"><div class="wrap strip-inner"><span><b>✦</b> Repairs & Maintenance</span><span><b>✦</b> Rims & Wheels</span><span><b>✦</b> Auto Care</span></div></div>
+    <section class="section" id="services"><div class="wrap">
+      <div class="section-top"><div><span class="eyebrow">What We Do</span><h2>OUR SERVICES</h2></div><p class="muted">A range of automotive services. Contact Xavier to confirm availability and receive a personalized quote.</p></div>
+      <div class="services">
+        <article class="service"><span class="number">01</span><span class="service-icon" aria-hidden="true">🔧</span><h3>Auto Repairs</h3><p>Help getting your vehicle back on the road, from common repairs to mechanical work.</p></article>
+        <article class="service"><span class="number">02</span><span class="service-icon" aria-hidden="true">🛞</span><h3>Rims & Wheels</h3><p>Custom wheel styles, rim work, and vehicle appearance upgrades.</p></article>
+        <article class="service"><span class="number">03</span><span class="service-icon" aria-hidden="true">🚘</span><h3>Tires & Wheel Care</h3><p>Ask about tire-related work, wheel care, and fitment options.</p></article>
+        <article class="service"><span class="number">04</span><span class="service-icon" aria-hidden="true">⚙️</span><h3>General Maintenance</h3><p>Routine vehicle care and maintenance support to keep you moving.</p></article>
+        <article class="service"><span class="number">05</span><span class="service-icon" aria-hidden="true">🔎</span><h3>Vehicle Checks</h3><p>Questions about how your vehicle drives? Ask about inspection and troubleshooting options.</p></article>
+        <article class="service"><span class="number">06</span><span class="service-icon" aria-hidden="true">✨</span><h3>Custom Projects</h3><p>Have another car project in mind? Reach out and tell Xavier what you need.</p></article>
+      </div>
+    </div></section>
+    <section class="section outline" id="about"><div class="wrap about">
+      <div class="about-img" role="img" aria-label="Sports car"></div>
+      <div><span class="eyebrow">Meet X Auto Shop</span><h2>MORE THAN<br>JUST A SHOP.</h2><p>X Auto Shop is an automotive service business by Xavier, focused on helping car owners maintain, repair, and personalize their rides.</p><p>Whether you're interested in a repair, a new set of rims, or a project that's uniquely yours, start the conversation here.</p><div class="checks"><span>Repair Options</span><span>Custom Wheel Projects</span><span>Vehicle Maintenance</span><span>Personal Quotes</span></div></div>
+    </div></section>
+    <section class="section outline" id="gallery"><div class="wrap">
+      <div class="section-top"><div><span class="eyebrow">Built Around Cars</span><h2>A LOOK INSIDE</h2></div><p class="muted">A preview of the style and services. Xavier's own before-and-after project photos can be added here.</p></div>
+      <div class="gallery">
+        <figure class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1738103814463-688f5acd36f0?auto=format&fit=crop&w=800&q=80" alt="Selection of car rims and wheels"><figcaption>Wheels & Rims <small>Illustrative photo</small></figcaption></figure>
+        <figure class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80" alt="Automotive workshop"><figcaption>Automotive Care <small>Illustrative photo</small></figcaption></figure>
+        <figure class="photo"><img loading="lazy" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80" alt="Sports car close-up"><figcaption>Custom Style <small>Illustrative photo</small></figcaption></figure>
+      </div><p class="sample-note">Preview photography is illustrative and does not represent completed work by X Auto Shop. Replace with authentic project photos before advertising past results.</p>
+    </div></section>
+    <section class="cta"><div class="wrap cta-inner"><div><span class="eyebrow">Every Build Starts Somewhere</span><h2>GOT A PROJECT<br>IN MIND?</h2></div><a class="btn" href="#contact">Let's Talk <span class="arrow">↗</span></a></div></section>
+    <section class="section" id="contact"><div class="wrap contact">
+      <div><span class="eyebrow">Get in Touch</span><h2>CONTACT<br>X AUTO SHOP</h2><p>Need a repair, have questions about rims, or want to talk through your next automotive project? Reach out to Xavier to discuss your options.</p>
+        <div class="info"><div class="info-item"><b>Phone / Text</b><span>Contact number coming soon</span></div><div class="info-item"><b>Service Area</b><span>Location details coming soon</span></div><div class="info-item"><b>Business Hours</b><span>Contact Xavier for availability</span></div></div>
+      </div><div class="contact-art" role="img" aria-label="Automotive rims and tires"></div>
+    </div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year">2026</span> X Auto Shop by Xavier. All rights reserved.</span><span>Driven by passion.</span></div></footer>
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const menu=document.getElementById('menu');const links=document.getElementById('nav-links');
+    menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'✕':'☰';});
+    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰';}));
+  </script>
+</body>
+</html>
